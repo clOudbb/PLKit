@@ -10,6 +10,6 @@
 
 @interface UIAlertController (PLExten)
 
-+ (UIAlertController *)qm_alertControllerWithTitle:(NSString *)title message:(NSString *)message confirm:(NSString *)confirm cancel:(NSString *)cancel confirmHandler:(void(^)(UIAlertAction *confirmAction))confirmHandler cancelHandler:(void(^)(UIAlertAction *cancelAction))cancelHandler;
++ (UIAlertController *)pl_alertControllerWithTitle:(NSString *)title message:(NSString *)message confirm:(NSString *)confirm cancel:(NSString *)cancel confirmHandler:(void(^)(UIAlertAction *confirmAction))confirmHandler cancelHandler:(void(^)(UIAlertAction *cancelAction))cancelHandler;
 
 @end

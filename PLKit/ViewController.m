@@ -19,10 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [[NSNotificationCenter defaultCenter] qm_addObsever:self name:@"kNotification" object:nil usingBlock:^(NSNotification *notif) {
+    [[NSNotificationCenter defaultCenter] pl_addObsever:self name:@"kNotification" object:nil usingBlock:^(NSNotification *notif) {
         if (notif.object) {
             NSLog(@"%@", notif.object);
-            [[NSNotificationCenter defaultCenter] qm_removeObserver:self];
+            [[NSNotificationCenter defaultCenter] pl_removeObserver:self];
         }
     }];
     
@@ -32,14 +32,11 @@
     [button addTarget:self action:@selector(send:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
-    
-    
-    
 }
 
 - (void)send:(UIButton *)button
 {
-//    [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotification" object:@"test"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotification" object:@"test"];
 }
 
 

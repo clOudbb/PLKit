@@ -10,8 +10,8 @@
 
 @interface NSNotificationCenter (Exten)
 
-- (void)qm_addObsever:(id)obsever name:(NSNotificationName)name object:(id)obj usingBlock:(void(^)(NSNotification*notif))block;
-- (void)qm_removeObserver:(id)observer name:(NSNotificationName)aName object:(id)anObject;
-- (void)qm_removeObserver:(id)observer;
+- (void)pl_addObsever:(id)obsever name:(NSNotificationName)name object:(id)obj usingBlock:(void(^)(NSNotification*notif))block;
+- (void)pl_removeObserver:(id)observer name:(NSNotificationName)aName object:(id)anObject;
+- (void)pl_removeObserver:(id)observer;
 
 @end

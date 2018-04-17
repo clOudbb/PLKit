@@ -52,7 +52,7 @@ struct QMContext {
 
 @implementation NSNotificationCenter (Exten)
 
-- (void)qm_addObsever:(id)obsever name:(NSNotificationName)name object:(id)obj usingBlock:(void(^)(NSNotification*notif))block
+- (void)pl_addObsever:(id)obsever name:(NSNotificationName)name object:(id)obj usingBlock:(void(^)(NSNotification*notif))block
 {
     _NotificationDispatch *disp = [_NotificationDispatch new];
     disp.name = name;
@@ -78,7 +78,7 @@ void enmuerateRemoveObject(const void *obj, void * context)
     }
 }
 
-- (void)qm_removeObserver:(id)observer name:(NSNotificationName)aName object:(id)anObject
+- (void)pl_removeObserver:(id)observer name:(NSNotificationName)aName object:(id)anObject
 {
     if (self.notificationSet) {
         CFMutableSetRef _set = CFSetCreateMutableCopy(CFAllocatorGetDefault(), 0, (__bridge const void *)self.notificationSet);
@@ -103,7 +103,7 @@ void enmuerateRemoveObjectWithTarget(const void *obj, void * context)
     }
 }
 
-- (void)qm_removeObserver:(id)observer
+- (void)pl_removeObserver:(id)observer
 {
     if (self.notificationSet) {
         CFMutableSetRef _set = CFSetCreateMutableCopy(CFAllocatorGetDefault(), 0, (__bridge const void *)self.notificationSet);

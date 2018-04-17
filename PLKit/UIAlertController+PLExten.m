@@ -19,7 +19,7 @@
 
 @implementation UIAlertController (PLExten)
 
-+ (UIAlertController *)qm_alertControllerWithTitle:(NSString *)title message:(NSString *)message confirm:(NSString *)confirm cancel:(NSString *)cancel confirmHandler:(void(^)(UIAlertAction *))confirmHandler cancelHandler:(void(^)(UIAlertAction *))cancelHandler
++ (UIAlertController *)pl_alertControllerWithTitle:(NSString *)title message:(NSString *)message confirm:(NSString *)confirm cancel:(NSString *)cancel confirmHandler:(void(^)(UIAlertAction *))confirmHandler cancelHandler:(void(^)(UIAlertAction *))cancelHandler
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *_confirm = [UIAlertAction actionWithTitle:confirm style:UIAlertActionStyleDefault handler:confirmHandler];
