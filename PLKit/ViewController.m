@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "NSNotificationCenter+Exten.h"
-
+#import "UIAlertController+PLExten.h"
 @interface ViewController ()
 
 @end
@@ -32,11 +32,14 @@
     [button addTarget:self action:@selector(send:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
+    
+    
+    
 }
 
 - (void)send:(UIButton *)button
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotification" object:@"test"];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotification" object:@"test"];
 }
 
 

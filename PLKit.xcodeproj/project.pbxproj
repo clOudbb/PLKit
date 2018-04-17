@@ -16,6 +16,7 @@
 		5778E1892084C3C9004124AA /* PLKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1882084C3C9004124AA /* PLKitTests.m */; };
 		5778E1942084C3C9004124AA /* PLKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1932084C3C9004124AA /* PLKitUITests.m */; };
 		5778E1A32084C417004124AA /* NSNotificationCenter+Exten.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1A12084C417004124AA /* NSNotificationCenter+Exten.m */; };
+		5778E1F3208609F7004124AA /* UIAlertController+PLExten.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1F2208609F7004124AA /* UIAlertController+PLExten.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		5778E1952084C3C9004124AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5778E1A12084C417004124AA /* NSNotificationCenter+Exten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Exten.m"; sourceTree = "<group>"; };
 		5778E1A22084C417004124AA /* NSNotificationCenter+Exten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Exten.h"; sourceTree = "<group>"; };
+		5778E1F1208609F7004124AA /* UIAlertController+PLExten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+PLExten.h"; sourceTree = "<group>"; };
+		5778E1F2208609F7004124AA /* UIAlertController+PLExten.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+PLExten.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				5778E1732084C3C8004124AA /* ViewController.m */,
 				5778E1A22084C417004124AA /* NSNotificationCenter+Exten.h */,
 				5778E1A12084C417004124AA /* NSNotificationCenter+Exten.m */,
+				5778E1F1208609F7004124AA /* UIAlertController+PLExten.h */,
+				5778E1F2208609F7004124AA /* UIAlertController+PLExten.m */,
 				5778E1752084C3C8004124AA /* Main.storyboard */,
 				5778E1782084C3C9004124AA /* Assets.xcassets */,
 				5778E17A2084C3C9004124AA /* LaunchScreen.storyboard */,
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5778E1742084C3C8004124AA /* ViewController.m in Sources */,
+				5778E1F3208609F7004124AA /* UIAlertController+PLExten.m in Sources */,
 				5778E17F2084C3C9004124AA /* main.m in Sources */,
 				5778E1712084C3C8004124AA /* AppDelegate.m in Sources */,
 				5778E1A32084C417004124AA /* NSNotificationCenter+Exten.m in Sources */,
