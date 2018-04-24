@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NSNotificationCenter+Exten.h"
 #import "UIAlertController+PLExten.h"
+#import "UIButton+PLAttachment.h"
 @interface ViewController ()
 
 @end
@@ -28,7 +29,10 @@
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = [UIColor orangeColor];
-    button.frame = (CGRect){100, 100, 100, 30};
+    button.frame = (CGRect){100, 100, 0, 30};
+    [button setImage:[UIImage imageNamed:@"exit"] forState:UIControlStateNormal];
+    [button setTitle:@"test" forState:UIControlStateNormal];
+    [button pl_attachment:PLButtonAlignmentRight space:5];
     [button addTarget:self action:@selector(send:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     

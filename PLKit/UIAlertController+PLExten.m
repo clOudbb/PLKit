@@ -8,15 +8,6 @@
 
 #import "UIAlertController+PLExten.h"
 
-@interface _UIAlertController :NSObject
-
-
-@end
-@implementation _UIAlertController
-
-@end
-
-
 @implementation UIAlertController (PLExten)
 
 + (UIAlertController *)pl_alertControllerWithTitle:(NSString *)title message:(NSString *)message confirm:(NSString *)confirm cancel:(NSString *)cancel confirmHandler:(void(^)(UIAlertAction *))confirmHandler cancelHandler:(void(^)(UIAlertAction *))cancelHandler
@@ -24,8 +15,8 @@
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *_confirm = [UIAlertAction actionWithTitle:confirm style:UIAlertActionStyleDefault handler:confirmHandler];
     UIAlertAction *_cancel = [UIAlertAction actionWithTitle:cancel style:UIAlertActionStyleDefault handler:cancelHandler];
-    [alert addAction:_confirm];
     [alert addAction:_cancel];
+    [alert addAction:_confirm];
     return alert;
 }
 

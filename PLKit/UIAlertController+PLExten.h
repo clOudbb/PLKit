@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UIAlertController (PLExten)
-
+/**
+ * show a default alert controller
+ */
 + (UIAlertController *)pl_alertControllerWithTitle:(NSString *)title message:(NSString *)message confirm:(NSString *)confirm cancel:(NSString *)cancel confirmHandler:(void(^)(UIAlertAction *confirmAction))confirmHandler cancelHandler:(void(^)(UIAlertAction *cancelAction))cancelHandler;
 
 @end
