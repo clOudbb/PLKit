@@ -29,13 +29,20 @@
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = [UIColor orangeColor];
-    button.frame = (CGRect){100, 100, 0, 30};
+    button.frame = (CGRect){100, 100, 100, 30};
     [button setImage:[UIImage imageNamed:@"exit"] forState:UIControlStateNormal];
-    [button setTitle:@"test" forState:UIControlStateNormal];
-    [button pl_attachment:PLButtonAlignmentRight space:5];
+    [button setTitle:@"绝地求生：刺激战场" forState:UIControlStateNormal];
+//    [button pl_attachment:PLButtonAlignmentTop space:5];
     [button addTarget:self action:@selector(send:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
+    [button setTitle:@"绝地求生" forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"teleportName"] forState:UIControlStateNormal];
+    
+    [button setTitle:@"绝地求生wee1e21ewqfqf...." forState:UIControlStateNormal];
+    [button pl_attachment:PLButtonAlignmentRight space:5];
+
+
 }
 
 - (void)send:(UIButton *)button
