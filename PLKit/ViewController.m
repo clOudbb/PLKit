@@ -41,8 +41,6 @@
     
     [button setTitle:@"绝地求生wee1e21ewqfqf...." forState:UIControlStateNormal];
     [button pl_attachment:PLButtonAlignmentRight space:5];
-
-
 }
 
 - (void)send:(UIButton *)button
