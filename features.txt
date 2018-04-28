@@ -1,0 +1,2 @@
+1. 增加UITableviewCell cate 让每个cell可以直接获取indexpath 
+2. 增加UIImage裁剪方法，可以直接裁剪对应宽度和高度
