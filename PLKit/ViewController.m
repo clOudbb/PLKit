@@ -10,6 +10,7 @@
 #import "NSNotificationCenter+Exten.h"
 #import "UIAlertController+PLExten.h"
 #import "UIButton+PLAttachment.h"
+#import "PLKitDefine.h"
 @interface ViewController ()
 
 @end
@@ -41,6 +42,8 @@
     
     [button setTitle:@"绝地求生wee1e21ewqfqf...." forState:UIControlStateNormal];
     [button pl_attachment:PLButtonAlignmentRight space:5];
+    
+    
 }
 
 - (void)send:(UIButton *)button

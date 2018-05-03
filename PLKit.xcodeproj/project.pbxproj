@@ -60,6 +60,7 @@
 		5778E1A22084C417004124AA /* NSNotificationCenter+Exten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Exten.h"; sourceTree = "<group>"; };
 		5778E1F1208609F7004124AA /* UIAlertController+PLExten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+PLExten.h"; sourceTree = "<group>"; };
 		5778E1F2208609F7004124AA /* UIAlertController+PLExten.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+PLExten.m"; sourceTree = "<group>"; };
+		577A0E52209AF3CA00DAE31B /* PLKitDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLKitDefine.h; sourceTree = "<group>"; };
 		57F61723208F3AFD00D6C179 /* UIButton+PLAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+PLAttachment.h"; sourceTree = "<group>"; };
 		57F61724208F3AFD00D6C179 /* UIButton+PLAttachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PLAttachment.m"; sourceTree = "<group>"; };
 		57F61726208F3E0B00D6C179 /* exit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit@2x.png"; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 				5778E1702084C3C8004124AA /* AppDelegate.m */,
 				5778E1722084C3C8004124AA /* ViewController.h */,
 				5778E1732084C3C8004124AA /* ViewController.m */,
+				577A0E52209AF3CA00DAE31B /* PLKitDefine.h */,
 				5778E1A22084C417004124AA /* NSNotificationCenter+Exten.h */,
 				5778E1A12084C417004124AA /* NSNotificationCenter+Exten.m */,
 				5778E1F1208609F7004124AA /* UIAlertController+PLExten.h */,
