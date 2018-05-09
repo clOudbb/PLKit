@@ -17,4 +17,25 @@
 
 static char * const kIGNORE_Wobjc_protocol_property_synthesis = "-Wobjc-protocol-property-synthesis";
 
+#pragma mark - valid 
+static inline bool pl_validString(NSString *str)
+{
+    return (str && [str isKindOfClass:[NSString class]] && ![str isEqualToString:@""] && str.length > 0);
+}
+
+static inline bool pl_validArray(NSArray *arr)
+{
+    return (arr && [arr isKindOfClass:[NSArray class]] && arr.count > 0);
+}
+
+static inline bool pl_validDictionary(NSDictionary *dic)
+{
+    return (dic && [dic isKindOfClass:[NSDictionary class]] && dic.allKeys.count > 0);
+}
+
+static inline bool pl_validSet(NSSet *set)
+{
+    return (set && [set isKindOfClass:[NSSet class]] && set.count > 0);
+}
+
 #endif /* PLKitDefine_h */
