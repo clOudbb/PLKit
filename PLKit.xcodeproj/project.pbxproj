@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5754C91020A318E000C02B9E /* NSString+PLExten.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754C90F20A318E000C02B9E /* NSString+PLExten.m */; };
 		5778E1712084C3C8004124AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1702084C3C8004124AA /* AppDelegate.m */; };
 		5778E1742084C3C8004124AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1732084C3C8004124AA /* ViewController.m */; };
 		5778E1772084C3C8004124AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5778E1752084C3C8004124AA /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5754C90E20A318E000C02B9E /* NSString+PLExten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PLExten.h"; sourceTree = "<group>"; };
+		5754C90F20A318E000C02B9E /* NSString+PLExten.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PLExten.m"; sourceTree = "<group>"; };
 		5778E16C2084C3C8004124AA /* PLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5778E16F2084C3C8004124AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5778E1702084C3C8004124AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 				5778E1F2208609F7004124AA /* UIAlertController+PLExten.m */,
 				57F61723208F3AFD00D6C179 /* UIButton+PLAttachment.h */,
 				57F61724208F3AFD00D6C179 /* UIButton+PLAttachment.m */,
+				5754C90E20A318E000C02B9E /* NSString+PLExten.h */,
+				5754C90F20A318E000C02B9E /* NSString+PLExten.m */,
 				5778E1752084C3C8004124AA /* Main.storyboard */,
 				5778E1782084C3C9004124AA /* Assets.xcassets */,
 				5778E17A2084C3C9004124AA /* LaunchScreen.storyboard */,
@@ -289,6 +294,7 @@
 			files = (
 				5778E1742084C3C8004124AA /* ViewController.m in Sources */,
 				5778E1F3208609F7004124AA /* UIAlertController+PLExten.m in Sources */,
+				5754C91020A318E000C02B9E /* NSString+PLExten.m in Sources */,
 				57F61725208F3AFD00D6C179 /* UIButton+PLAttachment.m in Sources */,
 				5778E17F2084C3C9004124AA /* main.m in Sources */,
 				5778E1712084C3C8004124AA /* AppDelegate.m in Sources */,

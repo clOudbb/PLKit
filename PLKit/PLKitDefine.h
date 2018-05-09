@@ -17,7 +17,7 @@
 
 static char * const kIGNORE_Wobjc_protocol_property_synthesis = "-Wobjc-protocol-property-synthesis";
 
-#pragma mark - valid 
+#pragma mark - valid
 static inline bool pl_validString(NSString *str)
 {
     return (str && [str isKindOfClass:[NSString class]] && ![str isEqualToString:@""] && str.length > 0);
