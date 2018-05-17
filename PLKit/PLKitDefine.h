@@ -15,6 +15,12 @@
 #define IGNORE_WARNING_IGNORED(__v) clang diagnostic ignored (__v)
 #define IGNORE_WARNING_POP clang diagnostic pop
 
+#define PLKIT_IGNORE_declarations(__v) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"" )\
+(__v); \
+_Pragma("clang diagnostic pop") \
+
 static char * const kIGNORE_Wobjc_protocol_property_synthesis = "-Wobjc-protocol-property-synthesis";
 
 #pragma mark - valid
