@@ -21,12 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [[NSNotificationCenter defaultCenter] pl_addObsever:self name:@"kNotification" object:nil usingBlock:^(NSNotification *notif) {
-        if (notif.object) {
-            NSLog(@"%@", notif.object);
-            [[NSNotificationCenter defaultCenter] pl_removeObserver:self];
-        }
-    }];
+//    [[NSNotificationCenter defaultCenter] pl_addObsever:self name:@"kNotification" object:nil usingBlock:^(NSNotification *notif) {
+//        if (notif.object) {
+//            NSLog(@"%@", notif.object);
+//            [[NSNotificationCenter defaultCenter] pl_removeObserver:self];
+//        }
+//    }];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = [UIColor orangeColor];
@@ -37,12 +37,14 @@
     [button addTarget:self action:@selector(send:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
-    [button setTitle:@"绝地求生" forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"teleportName"] forState:UIControlStateNormal];
+//    [button setTitle:@"绝地求生" forState:UIControlStateNormal];
+//    [button setImage:[UIImage imageNamed:@"teleportName"] forState:UIControlStateNormal];
+//    
+//    [button setTitle:@"绝地求生wee1e21ewqfqf...." forState:UIControlStateNormal];
+//    [button pl_attachment:PLButtonAlignmentRight space:5];
     
-    [button setTitle:@"绝地求生wee1e21ewqfqf...." forState:UIControlStateNormal];
-    [button pl_attachment:PLButtonAlignmentRight space:5];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test:) name:@"kNotification" object:nil];
 }
 
 - (void)send:(UIButton *)button

@@ -18,6 +18,9 @@
 		5778E1942084C3C9004124AA /* PLKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1932084C3C9004124AA /* PLKitUITests.m */; };
 		5778E1A32084C417004124AA /* NSNotificationCenter+Exten.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1A12084C417004124AA /* NSNotificationCenter+Exten.m */; };
 		5778E1F3208609F7004124AA /* UIAlertController+PLExten.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1F2208609F7004124AA /* UIAlertController+PLExten.m */; };
+		5780FBB720FF29390010C4E3 /* UINavigationController+HandleRespond.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780FBB620FF29390010C4E3 /* UINavigationController+HandleRespond.m */; };
+		5780FBBA20FF2B200010C4E3 /* PLCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780FBB920FF2B200010C4E3 /* PLCommonTool.m */; };
+		57C1DB3F20BFF5D8007771FF /* NSObject+YYTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C1DB3E20BFF5D8007771FF /* NSObject+YYTextLayout.m */; };
 		57F61725208F3AFD00D6C179 /* UIButton+PLAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F61724208F3AFD00D6C179 /* UIButton+PLAttachment.m */; };
 		57F61727208F3E0B00D6C179 /* exit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F61726208F3E0B00D6C179 /* exit@2x.png */; };
 		57F6182720906C0D00D6C179 /* teleportName.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F6182620906C0D00D6C179 /* teleportName.png */; };
@@ -64,6 +67,12 @@
 		5778E1F1208609F7004124AA /* UIAlertController+PLExten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+PLExten.h"; sourceTree = "<group>"; };
 		5778E1F2208609F7004124AA /* UIAlertController+PLExten.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+PLExten.m"; sourceTree = "<group>"; };
 		577A0E52209AF3CA00DAE31B /* PLKitDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLKitDefine.h; sourceTree = "<group>"; };
+		5780FBB520FF29390010C4E3 /* UINavigationController+HandleRespond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HandleRespond.h"; sourceTree = "<group>"; };
+		5780FBB620FF29390010C4E3 /* UINavigationController+HandleRespond.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HandleRespond.m"; sourceTree = "<group>"; };
+		5780FBB820FF2B200010C4E3 /* PLCommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCommonTool.h; sourceTree = "<group>"; };
+		5780FBB920FF2B200010C4E3 /* PLCommonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCommonTool.m; sourceTree = "<group>"; };
+		57C1DB3D20BFF5D8007771FF /* NSObject+YYTextLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYTextLayout.h"; sourceTree = "<group>"; };
+		57C1DB3E20BFF5D8007771FF /* NSObject+YYTextLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYTextLayout.m"; sourceTree = "<group>"; };
 		57F61723208F3AFD00D6C179 /* UIButton+PLAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+PLAttachment.h"; sourceTree = "<group>"; };
 		57F61724208F3AFD00D6C179 /* UIButton+PLAttachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PLAttachment.m"; sourceTree = "<group>"; };
 		57F61726208F3E0B00D6C179 /* exit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit@2x.png"; sourceTree = "<group>"; };
@@ -133,6 +142,12 @@
 				57F61724208F3AFD00D6C179 /* UIButton+PLAttachment.m */,
 				5754C90E20A318E000C02B9E /* NSString+PLExten.h */,
 				5754C90F20A318E000C02B9E /* NSString+PLExten.m */,
+				57C1DB3D20BFF5D8007771FF /* NSObject+YYTextLayout.h */,
+				57C1DB3E20BFF5D8007771FF /* NSObject+YYTextLayout.m */,
+				5780FBB520FF29390010C4E3 /* UINavigationController+HandleRespond.h */,
+				5780FBB620FF29390010C4E3 /* UINavigationController+HandleRespond.m */,
+				5780FBB820FF2B200010C4E3 /* PLCommonTool.h */,
+				5780FBB920FF2B200010C4E3 /* PLCommonTool.m */,
 				5778E1752084C3C8004124AA /* Main.storyboard */,
 				5778E1782084C3C9004124AA /* Assets.xcassets */,
 				5778E17A2084C3C9004124AA /* LaunchScreen.storyboard */,
@@ -292,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5780FBB720FF29390010C4E3 /* UINavigationController+HandleRespond.m in Sources */,
 				5778E1742084C3C8004124AA /* ViewController.m in Sources */,
+				5780FBBA20FF2B200010C4E3 /* PLCommonTool.m in Sources */,
 				5778E1F3208609F7004124AA /* UIAlertController+PLExten.m in Sources */,
+				57C1DB3F20BFF5D8007771FF /* NSObject+YYTextLayout.m in Sources */,
 				5754C91020A318E000C02B9E /* NSString+PLExten.m in Sources */,
 				57F61725208F3AFD00D6C179 /* UIButton+PLAttachment.m in Sources */,
 				5778E17F2084C3C9004124AA /* main.m in Sources */,
