@@ -7,11 +7,14 @@
 //
 
 #import "ViewController.h"
-#import "NSNotificationCenter+Exten.h"
-#import "UIAlertController+PLExten.h"
-#import "UIButton+PLAttachment.h"
 #import "PLKitDefine.h"
-@interface ViewController ()
+
+#import "NotificationDemoViewController.h"
+#import "UIFontDemoViewController.h"
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic) NSArray *sources;
 
 @end
 
@@ -21,37 +24,57 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    [[NSNotificationCenter defaultCenter] pl_addObsever:self name:@"kNotification" object:nil usingBlock:^(NSNotification *notif) {
-//        if (notif.object) {
-//            NSLog(@"%@", notif.object);
-//            [[NSNotificationCenter defaultCenter] pl_removeObserver:self];
-//        }
-//    }];
+
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.backgroundColor = [UIColor orangeColor];
-    button.frame = (CGRect){100, 100, 100, 30};
-    [button setImage:[UIImage imageNamed:@"exit"] forState:UIControlStateNormal];
-    [button setTitle:@"绝地求生：刺激战场" forState:UIControlStateNormal];
-//    [button pl_attachment:PLButtonAlignmentTop space:5];
-    [button addTarget:self action:@selector(send:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-    
-//    [button setTitle:@"绝地求生" forState:UIControlStateNormal];
-//    [button setImage:[UIImage imageNamed:@"teleportName"] forState:UIControlStateNormal];
-//    
-//    [button setTitle:@"绝地求生wee1e21ewqfqf...." forState:UIControlStateNormal];
-//    [button pl_attachment:PLButtonAlignmentRight space:5];
-    
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test:) name:@"kNotification" object:nil];
+    [self.view addSubview:self.tableView];
+    NSLog(@"%@", [UIFont fontNamesForFamilyName:@"PingFang SC"]);
 }
 
-- (void)send:(UIButton *)button
+
+- (UITableView *)tableView
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"kNotification" object:@"test"];
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor whiteColor];
+        
+        [_tableView registerClass:UITableViewCell.class forCellReuseIdentifier:NSStringFromClass(UITableViewCell.class)];
+    }
+    return _tableView;
 }
 
+- (NSArray *)sources
+{
+    if (!_sources) {
+        _sources = @[@"font", @"notification"];
+    }
+    return _sources;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.sources.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(UITableViewCell.class)];
+    cell.textLabel.text = _sources[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        UIFontDemoViewController *f = [UIFontDemoViewController new];
+        [self presentViewController:f animated:true completion:nil];
+    }
+    if (indexPath.row == 1) {
+        NotificationDemoViewController *n = [NotificationDemoViewController new];
+        [self presentViewController:n animated:true completion:nil];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

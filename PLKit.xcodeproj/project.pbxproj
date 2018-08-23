@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575094EF212E8586005FC6A0 /* UIFont+PLExten.m in Sources */ = {isa = PBXBuildFile; fileRef = 575094EE212E8586005FC6A0 /* UIFont+PLExten.m */; };
+		575094F2212E92C5005FC6A0 /* NotificationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575094F1212E92C5005FC6A0 /* NotificationDemoViewController.m */; };
+		575094F5212E92CF005FC6A0 /* UIFontDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575094F4212E92CF005FC6A0 /* UIFontDemoViewController.m */; };
 		5754C91020A318E000C02B9E /* NSString+PLExten.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754C90F20A318E000C02B9E /* NSString+PLExten.m */; };
 		5778E1712084C3C8004124AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1702084C3C8004124AA /* AppDelegate.m */; };
 		5778E1742084C3C8004124AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778E1732084C3C8004124AA /* ViewController.m */; };
@@ -44,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		575094ED212E8586005FC6A0 /* UIFont+PLExten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+PLExten.h"; sourceTree = "<group>"; };
+		575094EE212E8586005FC6A0 /* UIFont+PLExten.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+PLExten.m"; sourceTree = "<group>"; };
+		575094F0212E92C5005FC6A0 /* NotificationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationDemoViewController.h; sourceTree = "<group>"; };
+		575094F1212E92C5005FC6A0 /* NotificationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationDemoViewController.m; sourceTree = "<group>"; };
+		575094F3212E92CF005FC6A0 /* UIFontDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFontDemoViewController.h; sourceTree = "<group>"; };
+		575094F4212E92CF005FC6A0 /* UIFontDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontDemoViewController.m; sourceTree = "<group>"; };
+		575094F6212E932A005FC6A0 /* PLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLKit.h; sourceTree = "<group>"; };
 		5754C90E20A318E000C02B9E /* NSString+PLExten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PLExten.h"; sourceTree = "<group>"; };
 		5754C90F20A318E000C02B9E /* NSString+PLExten.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PLExten.m"; sourceTree = "<group>"; };
 		5778E16C2084C3C8004124AA /* PLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,11 +114,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		575094EC212E853E005FC6A0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				575094F6212E932A005FC6A0 /* PLKit.h */,
+				577A0E52209AF3CA00DAE31B /* PLKitDefine.h */,
+				5778E1A22084C417004124AA /* NSNotificationCenter+Exten.h */,
+				5778E1A12084C417004124AA /* NSNotificationCenter+Exten.m */,
+				5778E1F1208609F7004124AA /* UIAlertController+PLExten.h */,
+				5778E1F2208609F7004124AA /* UIAlertController+PLExten.m */,
+				57F61723208F3AFD00D6C179 /* UIButton+PLAttachment.h */,
+				57F61724208F3AFD00D6C179 /* UIButton+PLAttachment.m */,
+				5754C90E20A318E000C02B9E /* NSString+PLExten.h */,
+				5754C90F20A318E000C02B9E /* NSString+PLExten.m */,
+				57C1DB3D20BFF5D8007771FF /* NSObject+YYTextLayout.h */,
+				57C1DB3E20BFF5D8007771FF /* NSObject+YYTextLayout.m */,
+				5780FBB520FF29390010C4E3 /* UINavigationController+HandleRespond.h */,
+				5780FBB620FF29390010C4E3 /* UINavigationController+HandleRespond.m */,
+				575094ED212E8586005FC6A0 /* UIFont+PLExten.h */,
+				575094EE212E8586005FC6A0 /* UIFont+PLExten.m */,
+				5780FBB820FF2B200010C4E3 /* PLCommonTool.h */,
+				5780FBB920FF2B200010C4E3 /* PLCommonTool.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		5778E1632084C3C8004124AA = {
 			isa = PBXGroup;
 			children = (
 				57F61726208F3E0B00D6C179 /* exit@2x.png */,
 				57F6182620906C0D00D6C179 /* teleportName.png */,
+				575094EC212E853E005FC6A0 /* Source */,
 				5778E16E2084C3C8004124AA /* PLKit */,
 				5778E1872084C3C9004124AA /* PLKitTests */,
 				5778E1922084C3C9004124AA /* PLKitUITests */,
@@ -133,21 +169,10 @@
 				5778E1702084C3C8004124AA /* AppDelegate.m */,
 				5778E1722084C3C8004124AA /* ViewController.h */,
 				5778E1732084C3C8004124AA /* ViewController.m */,
-				577A0E52209AF3CA00DAE31B /* PLKitDefine.h */,
-				5778E1A22084C417004124AA /* NSNotificationCenter+Exten.h */,
-				5778E1A12084C417004124AA /* NSNotificationCenter+Exten.m */,
-				5778E1F1208609F7004124AA /* UIAlertController+PLExten.h */,
-				5778E1F2208609F7004124AA /* UIAlertController+PLExten.m */,
-				57F61723208F3AFD00D6C179 /* UIButton+PLAttachment.h */,
-				57F61724208F3AFD00D6C179 /* UIButton+PLAttachment.m */,
-				5754C90E20A318E000C02B9E /* NSString+PLExten.h */,
-				5754C90F20A318E000C02B9E /* NSString+PLExten.m */,
-				57C1DB3D20BFF5D8007771FF /* NSObject+YYTextLayout.h */,
-				57C1DB3E20BFF5D8007771FF /* NSObject+YYTextLayout.m */,
-				5780FBB520FF29390010C4E3 /* UINavigationController+HandleRespond.h */,
-				5780FBB620FF29390010C4E3 /* UINavigationController+HandleRespond.m */,
-				5780FBB820FF2B200010C4E3 /* PLCommonTool.h */,
-				5780FBB920FF2B200010C4E3 /* PLCommonTool.m */,
+				575094F0212E92C5005FC6A0 /* NotificationDemoViewController.h */,
+				575094F1212E92C5005FC6A0 /* NotificationDemoViewController.m */,
+				575094F3212E92CF005FC6A0 /* UIFontDemoViewController.h */,
+				575094F4212E92CF005FC6A0 /* UIFontDemoViewController.m */,
 				5778E1752084C3C8004124AA /* Main.storyboard */,
 				5778E1782084C3C9004124AA /* Assets.xcassets */,
 				5778E17A2084C3C9004124AA /* LaunchScreen.storyboard */,
@@ -309,11 +334,14 @@
 			files = (
 				5780FBB720FF29390010C4E3 /* UINavigationController+HandleRespond.m in Sources */,
 				5778E1742084C3C8004124AA /* ViewController.m in Sources */,
+				575094EF212E8586005FC6A0 /* UIFont+PLExten.m in Sources */,
+				575094F5212E92CF005FC6A0 /* UIFontDemoViewController.m in Sources */,
 				5780FBBA20FF2B200010C4E3 /* PLCommonTool.m in Sources */,
 				5778E1F3208609F7004124AA /* UIAlertController+PLExten.m in Sources */,
 				57C1DB3F20BFF5D8007771FF /* NSObject+YYTextLayout.m in Sources */,
 				5754C91020A318E000C02B9E /* NSString+PLExten.m in Sources */,
 				57F61725208F3AFD00D6C179 /* UIButton+PLAttachment.m in Sources */,
+				575094F2212E92C5005FC6A0 /* NotificationDemoViewController.m in Sources */,
 				5778E17F2084C3C9004124AA /* main.m in Sources */,
 				5778E1712084C3C8004124AA /* AppDelegate.m in Sources */,
 				5778E1A32084C417004124AA /* NSNotificationCenter+Exten.m in Sources */,
@@ -486,6 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ39JL6W43;
 				INFOPLIST_FILE = PLKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -502,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ39JL6W43;
 				INFOPLIST_FILE = PLKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
