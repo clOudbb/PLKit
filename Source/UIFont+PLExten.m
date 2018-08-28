@@ -139,7 +139,18 @@ static NSArray *_nameHash = nil;
         default:
             break;
     }
-    return [UIFont fontWithName:fontString size:fontSize];
+    
+    UIFont *font = nil;
+    @try {
+         font = [UIFont fontWithName:fontString size:fontSize];
+    }
+    @catch (NSException *exception) {
+        PLLOG(@"%@", exception);
+    }
+    @finally {
+        font = [UIFont systemFontOfSize:fontSize];
+    }
+    return font;
 }
 
 @end
